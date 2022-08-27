@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "588072328305",
+    "project_id": "udhari-8146d",
+    "storage_bucket": "udhari-8146d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588072328305:android:431b04cd84c827958a8fd0",
+        "android_client_info": {
+          "package_name": "com.example.expence_note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588072328305-vihbepcs2ss18ohhsih3e2hhl4r4k299.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBayK0HllVjFfYy7Ddbk_Yu7mRvRq2kDrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588072328305-vihbepcs2ss18ohhsih3e2hhl4r4k299.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
