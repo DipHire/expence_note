@@ -57,17 +57,18 @@ class _expenseEditorScreenState extends State<expenseEditorScreen> {
               keyboardType: TextInputType.multiline,
               maxLines: null,
               decoration: InputDecoration(
-                  border: InputBorder.none, hintText: 'Expence Info'),
+               hintText: 'Expence Info'),
               style: Appstyle.mainContent,
             ),
+            SizedBox(width: 8.0,),
             TextField(
               controller: _moneyController,
-              keyboardType: TextInputType.multiline,
+              keyboardType: TextInputType.number,
               maxLines: null,
               decoration:
-                  InputDecoration(border: InputBorder.none, hintText: 'Money'),
+              InputDecoration(hintText: 'Money'),
               style: Appstyle.mainContent,
-            ),
+            )
           ],
         ),
       ),

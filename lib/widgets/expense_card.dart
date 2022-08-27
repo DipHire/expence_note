@@ -19,28 +19,45 @@ Widget expenseCard(Function()? onTap, QueryDocumentSnapshot doc) {
             doc["user"].toString(),
             style: Appstyle.maintitle,
           ),
-          SizedBox(height: 3.0,),
+          SizedBox(
+            height: 3.0,
+          ),
           Text(
-            doc["creation_date"], 
+            doc["creation_date"],
             style: Appstyle.dateTitle,
           ),
-          const SizedBox(height: 8.0,),
+          const SizedBox(
+            height: 8.0,
+          ),
           Row(
             children: [
               Text(
-            doc["desc"],
-            style: Appstyle.mainContent,
-            overflow: TextOverflow.ellipsis,
-          ),
-          const SizedBox(width: 8.0,),
-          Text(
-            doc["money"].toString(),
-            style: Appstyle.mainContent,
-            overflow: TextOverflow.ellipsis,
-          ),
+                doc["desc"],
+                style: Appstyle.mainContent,
+                overflow: TextOverflow.ellipsis,
+              ),
+              const SizedBox(
+                width: 8.0,
+              ),
+              Text(
+                doc["money"].toString(),
+                style: Appstyle.mainContent,
+                overflow: TextOverflow.ellipsis,
+              ),
             ],
           ),
-          
+          const SizedBox(
+            height: 8.0,
+          ),
+          OutlinedButton.icon(
+            onPressed: () {},
+            icon: Icon(
+              Icons.check,
+              size: 24.0,
+              color: Colors.green,
+            ),
+            label: Text('Paid',style: TextStyle(color: Colors.green),), 
+          ),
         ],
       ),
     ),

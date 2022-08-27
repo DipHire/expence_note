@@ -28,23 +28,31 @@ class _expenseReaderScreenState extends State<expenseReaderScreen> {
               widget.doc["user"],
               style: Appstyle.maintitle,
             ),
-            SizedBox(height: 3.0,),
+            SizedBox(
+              height: 3.0,
+            ),
             Text(
-              widget.doc["creation_date"], 
+              widget.doc["creation_date"],
               style: Appstyle.dateTitle,
             ),
-            SizedBox(height: 30.0,),
-            Text(
-              widget.doc["desc"],
-              style: Appstyle.mainContent,
-              overflow: TextOverflow.ellipsis,
+            SizedBox(
+              height: 30.0,
             ),
-            SizedBox(height: 30.0,),
-            Text(
-              widget.doc["money"],
-              style: Appstyle.mainContent,
-              overflow: TextOverflow.ellipsis,
-            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text(
+                  widget.doc["desc"],
+                  style: Appstyle.mainContent,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                Text(
+                  widget.doc["money"],
+                  style: Appstyle.mainContent,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
+            )
           ],
         ),
       ),
