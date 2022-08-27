@@ -24,18 +24,23 @@ Widget expenseCard(Function()? onTap, QueryDocumentSnapshot doc) {
             doc["creation_date"], 
             style: Appstyle.dateTitle,
           ),
-          SizedBox(height: 8.0,),
-          Text(
+          const SizedBox(height: 8.0,),
+          Row(
+            children: [
+              Text(
             doc["desc"],
             style: Appstyle.mainContent,
             overflow: TextOverflow.ellipsis,
           ),
-          SizedBox(height: 8.0,),
+          const SizedBox(width: 8.0,),
           Text(
             doc["money"].toString(),
             style: Appstyle.mainContent,
             overflow: TextOverflow.ellipsis,
           ),
+            ],
+          ),
+          
         ],
       ),
     ),

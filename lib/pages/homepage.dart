@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
                   fontWeight: FontWeight.bold,
                   fontSize: 22),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Expanded(
@@ -54,13 +54,13 @@ class _HomePageState extends State<HomePage> {
                   builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
                     //Checking the connection state, if we can still load the data also we can display a progress
                     if (snapshot.connectionState == ConnectionState.waiting) {
-                      return Center(
+                      return const Center(
                         child: CircularProgressIndicator(),
                       );
                     }
                     if (snapshot.hasData) {
                       return GridView(
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2),
                         children: snapshot.data!.docs
                             .map((expense) => expenseCard(() {
