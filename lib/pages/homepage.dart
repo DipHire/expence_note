@@ -60,8 +60,9 @@ class _HomePageState extends State<HomePage> {
                     }
                     if (snapshot.hasData) {
                       return GridView(
-                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2),
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
+                                crossAxisCount: 2),
                         children: snapshot.data!.docs
                             .map((expense) => expenseCard(() {
                                   Navigator.push(

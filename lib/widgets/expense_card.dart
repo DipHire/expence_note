@@ -50,16 +50,25 @@ Widget expenseCard(Function()? onTap, QueryDocumentSnapshot doc) {
             height: 8.0,
           ),
           OutlinedButton.icon(
-            onPressed: () {},
+            onPressed: () {
+              deleteNote("YDJ56G6vQ7VUxugKKlFM");
+            },
             icon: Icon(
               Icons.check,
               size: 24.0,
               color: Colors.green,
             ),
-            label: Text('Paid',style: TextStyle(color: Colors.green),), 
+            label: Text(
+              'Paid',
+              style: TextStyle(color: Colors.green),
+            ),
           ),
         ],
       ),
     ),
   );
+}
+
+void deleteNote(id) {
+  FirebaseFirestore.instance.collection("udhari").doc(id).delete();
 }
