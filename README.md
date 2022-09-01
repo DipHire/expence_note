@@ -1,16 +1,20 @@
-# expence_note
+<h1 align="center"> 💰 Udhari </h1>
 
-A new Flutter project.
+Udhari is an android app that track your expense and make note ⌚
 
-## Getting Started
+<h2>🔥 Feature</h2>
 
-This project is a starting point for a Flutter application.
+- Simple UI
+- Firebase CRUD Operations
+- Real Time 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<h4> 🚧 Work in Progress
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## App 
+[![WallpaperWalaApp](https://img.shields.io/badge/Apk-WallpaperApp-informational?style=flat&logo=Android&color=ffcc00)]()
+
+
+## Web Demo
+[![BMI Calculator](https://img.shields.io/badge/Web-WallpaperApp-informational?style=flat&logo=flutter&color=673ab7)](https://diphire.github.io/)
